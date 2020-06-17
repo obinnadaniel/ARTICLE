@@ -1,0 +1,103 @@
+$color-defaultLinkColor: #007BFE; 
+$color-defaultTextColor: #202428; 
+$color-darkgrey: #868686; 
+$color-mainBtnColor: #34f0eb; 
+$color-AltBtnColor: #96FDFC; 
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: $color-defaultTextColor;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.heading {
+  margin-top: 1.5rem;
+}
+
+.heading__main {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.logo {
+  padding: 1rem 2.5rem;
+}
+
+.author {
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.article__text {
+  padding: .5rem 0;
+  margin-bottom: 0;
+}
+
+.article__text--alt {
+  font-weight: 800;
+}
+
+.article__link {
+  color: $color-defaultLinkColor;
+}
+
+.related-products {
+  &__heading {
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+  &__item-heading {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  &__icon {
+    padding-left: 0;
+  }
+
+  &__item-text {
+    color: $color-darkgrey;
+    line-height: 1.2;
+    font-size: .8rem;
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    background-image: linear-gradient(to right, rgba($color-mainBtnColor, 1), rgba($color-AltBtnColor, 0.5) );
+    box-shadow: none;
+    border: none;
+    border-radius: 100px;
+    padding: 0.6rem 0.85rem;
+    font-weight: 800;
+    font-size: .75rem;
+    text-transform: capitalize;
+  }
+
+  .card {
+    box-shadow: 0 8px 6px -6px $color-darkgrey;
+    border-radius: 15px;
+    &-body {
+      .row {
+        margin: 1.5rem auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px){
+  .related-products__btn { 
+    padding: 0.6rem 0.85rem; 
+   
+  }
+}
+
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
